@@ -16,9 +16,9 @@ import {} from 'dotenv/config'
 
 const app = express()
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 
-app.listen(4050,()=>{
+app.listen(PORT,()=>{
 
     console.log(`App is listening at port ${PORT} !!!!`)
 })
